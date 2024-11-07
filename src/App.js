@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+
+import Back from './components/Back';
+import Featuredcollections from './components/Featuredcollections';
+import Footer from './components/Footer';
+import Look from './components/Look';
+import Menubar from './components/Menubar';
+import Slider from './components/Slider';
+import { Toptrending } from './components/Toptrending';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+     <Menubar />
+     <Slider />
+     <Featuredcollections />
+     <Look />
+     <Toptrending />
+     <Back />
+     <Footer />
     </div>
   );
 }
